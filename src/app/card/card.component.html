@@ -1,0 +1,46 @@
+<section>
+    <h1>Пример Card</h1>
+    <mat-card (mouseenter)="toggleElement()" (mouseleave)="toggleElement()" [ngClass]="{'addShadow' : showElem.show}"
+        class="example-card">
+        <mat-card-header>
+            <div mat-card-avatar class="myheader" title="подарочный сертификат">
+                <mat-icon>card_giftcard</mat-icon>
+            </div>
+            <mat-card-title>Туфли летние</mat-card-title>
+            <mat-card-subtitle>Reiker men</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="./assets/images/13.jpg" alt="Туфли летние"
+            title="Туфли летние Reiker men - натуральная кожа">
+        <mat-card-content>
+            <div class="stars" [ngClass]="{'addStars':showElem.show}">
+                <mat-icon>star </mat-icon>
+                <mat-icon>star</mat-icon>
+                <mat-icon>star</mat-icon>
+                <mat-icon>star_half</mat-icon>
+                <mat-icon>star_border</mat-icon>
+            </div>
+            <p>Материал верха: натуральная кожа.</p>
+            <p>Ограниченая серия</p>
+            <p><span class="price">148руб. </span></p>
+            <ul>
+                <li>
+                    <mat-icon mat-icon-batton>lens</mat-icon>
+
+                </li>
+                <li>
+                    <mat-icon mat-icon-batton>lens</mat-icon>
+
+                </li>
+                <li>
+                    <mat-icon mat-icon-batton>lens</mat-icon>
+
+                </li>
+            </ul>
+        </mat-card-content>
+        <mat-card-actions>
+            <p title="Добавить в корзину" class="mybutton">
+                <a href="">Добавить в корзину</a>
+            </p>
+        </mat-card-actions>
+    </mat-card>
+</section>
